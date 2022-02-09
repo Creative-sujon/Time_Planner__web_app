@@ -1,0 +1,720 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.mid-content {
+    max-width: 1300px;
+    margin: auto;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.header-section {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 4px 0px;
+}
+.header-section a {
+    color: rgb(1, 1, 1);
+}
+.header-logo {
+    width: 30%;
+}
+.header-logo span:hover {
+    color: rgb(221, 221, 221);
+}
+.logo img {
+    height: 48px;
+    float: left;
+    margin-right: 16px;
+    margin-top: 7px;
+}
+.logo span {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.header-menu {
+    width: 60%;
+}
+.primary-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.primary-menu ul li a {
+    display: block;
+    padding: 0px 25px;
+    font-size: 16px;
+    line-height: 59px;
+    font-weight: 400;
+}
+.header-button {
+    width: 10%;
+    position: relative;
+}
+.primary-menu ul li ul {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+.primary-menu ul li ul li {
+    display: block;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.primary-menu ul li ul li a {
+    display: block;
+}
+
+.primary-menu ul li:hover > a {
+    color: rgb(98, 120, 223);
+    z-index: 9;
+}
+.primary-menu ul li ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform-origin: top;
+}
+.primary-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+.header-button a {
+    border: 1px solid #6278df;
+    color: #6278df;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: .4s;
+}
+.header-button a:hover{
+    background: #6278df;
+    color: #fff;
+    box-shadow: 4px 4px 30px #546aca;
+}
+
+/* Banner Part Start */
+.banner-section {
+    background: url("https://i.ibb.co/nBpMmDH/banner.jpg") center center / cover no-repeat;
+    padding: 180px 0px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 9;
+}
+.banner-section::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.banner-content h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.banner-content h2 {
+    font-size: 60px;
+    padding: 30px;
+}
+.default-btn {
+    color: rgb(125, 125, 125);
+    padding: 21px 35px;
+    background: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 9px;
+    transition: all 0.4s ease 0s;
+}
+.banner-bottom {
+    background: rgb(247, 249, 255);
+    padding: 85px 0px;
+}
+.banner-content a:hover {
+    background: rgb(98, 120, 223);
+    color: rgb(255, 255, 255);
+}
+
+
+/* Banner Bottom Section */
+.video-left {
+    width: 50%;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.video-right {
+    width: 48%;
+}
+.video-right h3 {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.video-right p {
+    font-size: 21px;
+    text-align: justify;
+    color: rgb(118, 118, 118);
+    line-height: 28px;
+}
+
+/* Service Section Start */
+.servie-section {
+    background: rgb(255, 255, 255);
+}
+.service-header {
+    padding: 50px;
+}
+.service-header h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 40px 0px;
+}
+.service-header p {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.service-box {
+    width: 31%;
+    height: auto;
+    display: inline-block;
+    margin: 1%;
+    box-sizing: border-box;
+    padding: 48px 32px;
+    transition: all 0.4s ease 0s;
+}
+.icon-div {
+    width: 89px;
+    height: 130px;
+}
+.icon-div span {
+    font-size: 50px;
+    color: rgb(98, 120, 223);
+}
+.service-box h2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.service-box p {
+    font-size: 21px;
+    font-weight: 300;
+}
+.service-box:hover {
+    box-shadow: rgba(54, 73, 153, 0.1) 5px 5px 30px 5px;
+}
+
+/* Team Section Start */
+.Team-Section {
+    margin-bottom: 60px;
+}
+.Team-Section h2 {
+    text-align: center;
+    font-size: 45px;
+    padding: 66px 0px;
+    font-weight: 500;
+}
+.profile-part {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: rgba(8, 120, 134, 0.12) 4px 5px 30px;
+    transition: .4s;
+}
+.profile-part:hover{
+    box-shadow: rgb(155, 212, 236) 4px 5px 30px;
+}
+.profile-part img {
+    width: 290px;
+    height: auto;
+    margin-bottom: 27px;
+}
+.profile-part h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px 0px 12px 20px;
+}
+.profile-part p {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0px 0px 27px 20px;
+}
+.subscribe-section {
+    padding: 28px 0px 90px;
+    background: rgb(247, 249, 255);
+}
+.Subscribe-div p {
+    color: rgb(118, 118, 118);
+    font-size: 24px;
+    font-weight: 300;
+    padding: 50px 0px 40px;
+}
+.Subscribe-div h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+.email-box {
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid transparent;
+    color: rgb(218, 215, 215);
+    box-shadow: 4px 4px 20px;
+    transition: .5s;
+}
+.subscribe-box {
+    padding: 17px 75px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    background: rgb(98, 120, 223);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    margin-left: 13px;
+    transition: .4s;
+}
+
+.subscribe-box:hover{
+    background: #fff;
+    color: rgb(98, 120, 223);
+    border: 1px solid rgb(48, 78, 211);
+    box-shadow: 4px 4px 30px rgb(59, 86, 207, .5);
+}
+
+/* Pricing Table Section */
+.pricing-table-section {
+    background: rgb(247, 249, 255);
+}
+.section-title h1 {
+    font-size: 56px;
+    font-weight: 400;
+    padding: 40px 0px;
+}
+.section-title p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.price-table {
+    padding-bottom: 35px;
+}
+.pricing-table-item {
+    width: 31%;
+    margin-right: 2%;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.13) 3px 3px 30px;
+}
+.p-heading {
+    border-bottom: 2px solid rgb(221, 221, 221);
+    transition: all 0.4s ease 0s;
+}
+.p-heading h4 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 35px 0px 10px 30px;
+}
+.p-heading h1 {
+    font-size: 56px;
+    font-weight: 700;
+    padding: 25px 30px;
+}
+.p-heading h1 span {
+    font-size: 21px;
+    font-weight: 700;
+}
+.p-heading h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 15px 30px;
+}
+.p-heading p {
+    padding: 18px 30px;
+    line-height: 32px;
+}
+.p-content {
+    padding: 32px;
+}
+.p-content ul {
+    list-style: none;
+}
+.p-content ul li {
+    font-size: 21px;
+    font-weight: 300;
+    color: rgb(118, 118, 118);
+    margin-top: 35px;
+}
+.p-content ul li span {
+    width: 35px;
+    font-size: 32px;
+    margin-right: 16px;
+    color: rgb(98, 120, 223);
+}
+
+.p-button .default-btn {
+    color: rgb(98, 120, 223);
+    padding: 17px 100px;
+    margin: 50px 0px 35px;
+    box-shadow: rgba(53, 44, 44, 0.15) 4px 5px 35px;
+}
+.pricing-table-item:hover .p-heading {
+    background: rgb(98, 120, 223);
+    color: rgb(255, 255, 255);
+}
+.pricing-table-item:hover .price-btn {
+    background: rgb(98, 120, 223);
+    color: rgb(255, 255, 255);
+}
+.p-button:hover .price-btn {
+    background: black;
+    color: rgb(255, 255, 255);
+}
+
+/* Report Section Start */
+.reporting-section {
+    padding: 100px 0px 70px;
+}
+.reporting-div h1 {
+    width: 48%;
+    font-size: 44px;
+    font-weight: 500;
+}
+.reporting-div p {
+    width: 48%;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(118, 118, 118);
+}
+.news-content {
+    margin-bottom: 70px;
+}
+.blog-content {
+}
+.blog-content-1 {
+    width: 48%;
+    box-shadow: rgba(0, 0, 0, 0.08) 4px 4px 30px;
+    margin: 0px 4px;
+    transition: all 0.4s ease 0s;
+}
+.blog-clear {
+}
+.blog-content-1 img {
+    width: 312px;
+    height: auto;
+    float: left;
+}
+.content-part {
+    float: right;
+    width: 250px;
+    padding: 37px 30px;
+}
+.content-part h2 {
+    font-size: 21px;
+    font-weight: 500;
+}
+.content-part h3 {
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 16px;
+    color: rgb(118, 118, 118);
+    line-height: 1.5;
+}
+.blog-content-nth {
+    margin-right: -1px !important;
+}
+.blog-content-1:hover {
+    box-shadow: rgb(199, 199, 199) 4px 4px 30px;
+}
+
+
+/* Review part Start */
+.review-section {
+    background: #f7f9ff;
+    padding: 60px 0 30px 0;
+}
+.review-header {
+}
+.review-header h3 {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0 0 16px 0;
+}
+.review-header h2 {
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 48px;
+}
+.user-review-part {
+}
+.user-1 {
+    width: 29%;
+    margin: 2%;
+}
+.user-content {
+    background: #fff;
+    position: relative;
+}
+
+.user-content::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.user-content span {
+}
+.user-content span i {
+    font-size: 81px;
+    color: #cccccc;
+    opacity: 0.3;
+    position: absolute;
+    top: 32px;
+    left: 37px;
+}
+.user-content p {
+    font-size: 21px;
+    font-weight: 300;
+    padding: 60px 48px;
+    letter-spacing: normal;
+    color: #767676;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 4px 4px 30px #0000000d;
+}
+.user-content p:hover{
+    box-shadow: 4px 4px 30px rgb(218, 216, 216);
+}
+.user-profile {
+    padding: 32px 0 25px 0;
+    align-items: center;
+    position: relative;
+}
+.user-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 102px;
+}
+.user-name {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 215px;
+}
+.user-name h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.user-name span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Contact Section Start */
+.contact-section{
+    padding: 50px 0px;
+}
+.google-map{
+    width: 49%;
+    height: 600px;
+}
+.contact-part {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.contact-header{}
+.contact-header h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding-bottom: 16px;
+}
+.contact-header h3 {
+    font-size: 21px;
+    line-height: 1.5;
+    color: #767676;
+    padding-bottom: 48px;
+}
+.contact-form{}
+.email-input{
+    width: 96%;
+    box-sizing: border-box;
+    padding: 24px;
+    margin: 8px;
+    color: #333131;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    box-shadow: 4px 4px 30px 0 rgba(64,87,191,0.1);
+    font-size: 1.3rem;
+    background: white;
+    transition: .4s;
+    outline: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 200;
+    transition: .5s;
+}
+   
+.half-input{
+    width: 46%;
+    box-sizing: border-box;
+    padding: 24px;
+    margin: 8px;
+    color: #333131;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    box-shadow: 4px 4px 30px 0 rgba(64,87,191,0.1);
+    font-size: 1.3rem;
+    background: white;
+    transition: .4s;
+    outline: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 200;
+    transition: .5s;
+}
+.message-box{
+    width: 534px;
+    padding: 24px;
+    margin: 8px;
+    box-sizing: border-box;
+    color: #333131;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    box-shadow: 4px 4px 30px 0 rgba(64,87,191,0.1);
+    font-size: 1.3rem;
+    background: white;
+    transition: .4s;
+    outline: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 200;
+    transition: .5s;
+}
+.btn-input{
+    width: 96%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 8px;
+    color: #333131;
+    border: 1px solid rgb(98, 120, 223);
+    border-radius: 8px;
+    box-shadow: 4px 4px 30px 0 rgba(64,87,191,0.1);
+    font-size: 1.3rem;
+    background: white;
+    transition: .4s;
+    outline: none;
+    background: rgb(98, 120, 223);
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+a .btn-input:hover{
+    background: #fff;
+    color: rgb(98, 120, 223);
+    box-shadow: 4px 4px 30px rgb(114, 136, 233);
+}
+.default-input:focus{
+    box-shadow: 4px 4px 30px rgb(28, 63, 221, .5);
+    border: 1px solid rgb(28, 63, 221);
+}
+
+
+/*  Footer part Start  */
+.footer{
+    background: #f7f9ff;
+    height: 60px;
+    padding: 10px;
+}
+.footer-left-content{
+    float: left;
+    width: 40%;
+}
+.footer-left-content h2{
+    color: #4a4a4a;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.footer-left-content h3{
+    font-size: 22px;
+    color: #3c3b3b;
+    font-weight: 400;
+}
+.footer-right-content{
+    float: right;
+    margin-right: 50px;
+}
+.social-menu li{
+    display: inline-block;
+}
+.social-menu li a{
+    margin-left: 17px;
+    color: #3c3b3b;
+    font-size: 25px;
+    line-height: 60px;
+}
+.social-menu li a:hover{
+    color: rgb(80, 82, 204);
+}
